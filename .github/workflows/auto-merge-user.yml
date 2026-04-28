@@ -7,7 +7,7 @@ jobs:
   enable-auto-merge:
     runs-on: ubuntu-latest
     # REPLACE 'target-username' with the actual GitHub username
-    if: github.event.pull_request.user.login == 'target-username'
+    if: github.event.pull_request.user.login == 'exercism-solutions-syncer'
     steps:
       - name: Enable Auto-Merge
         env:
